@@ -21,3 +21,31 @@ Guillaume Smet
 include::{sourcedir}/org/hibernate/infra/asciidoctor/test/IncludeTest.java[]
 ----
 ====
+
+== Conums
+
+.Using a separate resource to configure the Hot Rod client
+====
+[source, XML]
+----
+<?xml version="1.0"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+
+	<persistence-unit name="ogm-with-hotrod">
+		<provider>org.hibernate.ogm.jpa.HibernateOgmPersistence</provider> # <1>
+		<properties>
+			<property name="hibernate.ogm.datastore.provider"
+				value="infinispan_remote" /> # <2>
+			<property name="hibernate.ogm.infinispan_remote.configuration_resource_name"
+				value="hotrodclient.properties" /> # <3>
+		</properties>
+	</persistence-unit>
+</persistence>
+----
+<1> Choose Hibernate OGM as JPA Provider
+<2> pick `infinispan_remote` as datastore
+<3> point to the Hot Rod configuration file
+

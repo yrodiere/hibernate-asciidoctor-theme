@@ -5,13 +5,13 @@
 font:
   catalog:
     Overpass:
-      normal: Overpass-Regular.ttf
+      normal: Overpass-Regular-conums.ttf
       italic: Overpass-Italic.ttf
       bold: Overpass-Bold.ttf
       bold_italic: Overpass-BoldItalic.ttf
     Overpass Mono:
-      normal: OverpassMono-Regular.ttf
-      italic: OverpassMono-Regular.ttf
+      normal: OverpassMono-Regular-conums.ttf
+      italic: OverpassMono-Regular-conums.ttf
       bold: OverpassMono-Bold.ttf
       bold_italic: OverpassMono-Bold.ttf
     # M+ 1mn supports ASCII and the circled numbers used for conums
@@ -182,7 +182,7 @@ code:
   border_radius: $base_border_radius
   border_width: 0.75
 conum:
-  font_family: M+ 1mn
+  font_family: $base_font_family
   font_color: $literal_font_color
   font_size: $base_font_size
   line_height: 4 / 3

@@ -18,6 +18,16 @@ You can generate the test output in `target/asciidoctor` by running the followin
 mvn clean test
 ```
 
+## Fonts
+
+The ``Overpass-*-conums.ttf`` fonts are copies of the according Overpass font including the callout numbers characters of the ``mplus1mn-regular-ascii-conums.ttf`` font.
+
+The Unicode range for the conums is `U+2460` - `U+2473`.
+
+[FontForge](https://fontforge.github.io/) can be used to copy/paste the characters from one font to another and generate the new font.
+
+See https://github.com/asciidoctor/asciidoctor-pdf/issues/409 for all the background about this issue.
+
 ## License
 
 The source code is licensed under the Apache License version 2.0.
