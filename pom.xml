@@ -147,7 +147,9 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <nonFilteredFileExtensions>ttf</nonFilteredFileExtensions>
+                    <nonFilteredFileExtensions>
+                        <nonFilteredFileExtension>ttf</nonFilteredFileExtension>
+                    </nonFilteredFileExtensions>
                 </configuration>
             </plugin>
             <plugin>
