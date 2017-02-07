@@ -1,0 +1,21 @@
+# Build output directories
+target/
+build/
+bin/
+
+# IntelliJ specific files/directories
+out/
+.idea
+*.ipr
+*.iws
+*.iml
+atlassian-ide-plugin.xml
+
+# Eclipse specific files/directories
+.classpath
+.project
+.settings
+.factorypath
+.checkstyle
+.externalToolBuilders
+maven-eclipse.xml

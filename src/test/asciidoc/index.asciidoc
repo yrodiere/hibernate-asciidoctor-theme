@@ -1,0 +1,23 @@
+= Hibernate Asciidoctor theme: Test document
+Guillaume Smet
+:doctype: book
+:revnumber: {theme-version}
+:revdate: {docdate}
+:sectanchors:
+:anchor:
+:toc: left
+:docinfodir: {docinfodir}
+:docinfo:
+:title-logo-image: image:hibernate_logo_a.png[align=left,pdfwidth=33%]
+
+:numbered:
+
+== Included content
+
+.IncludeTest.java
+====
+[source, JAVA, indent=0]
+----
+include::{sourcedir}/org/hibernate/infra/asciidoctor/test/IncludeTest.java[]
+----
+====
