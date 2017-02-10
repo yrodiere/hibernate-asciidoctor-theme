@@ -35,5 +35,7 @@ The source code is licensed under the Apache License version 2.0.
 This repository also contains external resources:
 
  * a copy of the default Asciidoctor PDF theme as a reference - MIT license
- * the Overpass font - SIL OPEN FONT LICENSE Version 1.1
+ * the Overpass font - SIL OFL 1.1
  * several of the M+ fonts - see the included license file
+ * the Font Awesome font and stylesheets - SIL OFL 1.1 and MIT license
+
