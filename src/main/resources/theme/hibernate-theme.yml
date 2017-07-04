@@ -32,7 +32,7 @@ font:
 page:
   background_color: ffffff
   layout: portrait
-  margin: [0.75in, 1in, 0.75in, 1in]
+  margin: [0.75in, 0.8in, 0.75in, 0.8in]
   # margin_inner and margin_outer keys are used for recto/verso print margins when media=press
   margin_inner: 1in
   margin_outer: 0.75in
@@ -172,7 +172,7 @@ blockquote:
 code:
   font_color: $base_font_color
   font_family: $literal_font_family
-  font_size: 9
+  font_size: 8
   padding: $code_font_size
   line_height: 1.1
   # line_gap is an experimental property to control how a background color is applied to an inline block element
@@ -192,7 +192,7 @@ example:
   border_width: 0.75
   background_color: ffffff
   # FIXME reenable padding bottom once margin collapsing is implemented
-  padding: [$vertical_rhythm, $horizontal_rhythm, 0, $horizontal_rhythm]
+  padding: [$vertical_rhythm * 0.5, $horizontal_rhythm * 0.5, 0, $horizontal_rhythm * 0.5]
 image:
   align: left
 prose:
