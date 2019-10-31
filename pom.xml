@@ -5,7 +5,7 @@
     <groupId>org.hibernate.infra</groupId>
     <artifactId>hibernate-asciidoctor-theme</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.3.Final</version>
+    <version>1.0.4-SNAPSHOT</version>
 
     <name>Hibernate Asciidoctor theme</name>
     <description>
@@ -297,7 +297,7 @@
         <connection>scm:git:git://github.com/hibernate/hibernate-asciidoctor-theme.git</connection>
         <developerConnection>scm:git:git@github.com:hibernate/hibernate-asciidoctor-theme.git</developerConnection>
         <url>http://github.com/hibernate/hibernate-asciidoctor-theme</url>
-        <tag>1.0.3.Final</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <ciManagement>
