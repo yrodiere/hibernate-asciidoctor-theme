@@ -6,8 +6,9 @@ Guillaume Smet
 :sectanchors:
 :anchor:
 :toc: left
+:toclevels: 3
 :docinfodir: {docinfodir}
-:docinfo:
+:docinfo: shared,private
 :title-logo-image: image:hibernate_logo_a.png[align=left,pdfwidth=33%]
 
 :numbered:
@@ -21,6 +22,18 @@ Guillaume Smet
 include::{sourcedir}/org/hibernate/infra/asciidoctor/test/IncludeTest.java[]
 ----
 ====
+
+== Nested sections
+
+Some content
+
+=== Sub-section A
+
+Some content
+
+=== Sub-section B
+
+Some content
 
 == Conums
 
@@ -48,4 +61,4 @@ include::{sourcedir}/org/hibernate/infra/asciidoctor/test/IncludeTest.java[]
 <1> Choose Hibernate OGM as JPA Provider
 <2> pick `infinispan_remote` as datastore
 <3> point to the Hot Rod configuration file
-
+====

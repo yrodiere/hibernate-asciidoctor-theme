@@ -85,6 +85,21 @@
                         </configuration>
                     </execution>
                     <execution>
+                        <id>copy-script-to-zip-content</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <resources>
+                                <resource>
+                                    <directory>${resources.dir}/script/</directory>
+                                </resource>
+                            </resources>
+                            <outputDirectory>${zip-content.dir}/script</outputDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
                         <id>copy-theme-to-zip-content</id>
                         <phase>generate-resources</phase>
                         <goals>
@@ -143,6 +158,21 @@
                                 </resource>
                             </resources>
                             <outputDirectory>${project.build.directory}/asciidoctor/css</outputDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-script-to-test-directory</id>
+                        <phase>generate-test-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <resources>
+                                <resource>
+                                    <directory>${zip-content.dir}/script/</directory>
+                                </resource>
+                            </resources>
+                            <outputDirectory>${project.build.directory}/asciidoctor/script</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>
