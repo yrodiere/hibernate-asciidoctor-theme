@@ -17,10 +17,14 @@
 
 <!-- Dynamic TOC -->
 <!-- Source: https://github.com/asciidoctor/asciidoctor/issues/699#issuecomment-321066006 -->
-<script src="script/tocbot-3.0.2/tocbot.min.js"></script>
+<script src="script/tocbot-4.11.2/tocbot.min.js"></script>
 <script>
-    /* Tocbot dynamic TOC, works with tocbot 3.0.2 */
-    /* Source: https://github.com/asciidoctor/asciidoctor/issues/699#issuecomment-321066006 * Also, adapted to auto-detect the heading selector.
+    /*
+     * Tocbot dynamic TOC, works with tocbot 4.11.2
+     *
+     * Source: https://github.com/asciidoctor/asciidoctor/issues/699#issuecomment-321066006
+     * Adapted from tocbot 3.0.2.
+     * Also, adapted to auto-detect the heading selector.
      */
     var oldtoc = document.getElementById('toctitle').nextElementSibling;
 
@@ -51,7 +55,8 @@
     oldtoc.parentNode.replaceChild(newtoc, oldtoc);
     tocbot.init({ contentSelector: '#content',
         headingSelector: headingSelectorVal,
-        smoothScroll: false });
+        orderedList: false,
+        scrollSmooth: false });
     var handleTocOnResize = function() {
         var width = window.innerWidth
                     || document.documentElement.clientWidth
@@ -59,15 +64,17 @@
         if (width < 768) {
             tocbot.refresh({ contentSelector: '#content',
                 headingSelector: headingSelectorVal,
+                orderedList: false,
+                scrollSmooth: false,
                 collapseDepth: 6,
                 activeLinkClass: 'ignoreactive',
-                throttleTimeout: 1000,
-                smoothScroll: false });
+                throttleTimeout: 1000 });
         }
         else {
             tocbot.refresh({ contentSelector: '#content',
                 headingSelector: headingSelectorVal,
-                smoothScroll: false });
+                orderedList: false,
+                scrollSmooth: false });
         }
     };
     window.addEventListener('resize', handleTocOnResize);
